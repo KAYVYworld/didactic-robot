@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Portia ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #fff0f3, #fce4ec, #fff8f0);
+    color: #633b49;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background:
+      linear-gradient(rgba(255,235,240,.75), rgba(255,245,240,.85)),
+      radial-gradient(circle, #f8bbd0, #fff0f3);
+}
+
+.small-title {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #a45b73;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(42px, 10vw, 75px);
+    color: #a83f63;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 19px;
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+.heart {
+    color: #d45b80;
+    font-size: 35px;
+    margin: 20px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    50% { transform: scale(1.2); }
+}
+
+.music-button {
+    margin-top: 28px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #a83f63;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px #d9a2b3;
+}
+
+.music-note {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #885365;
+}
+
+section {
+    padding: 70px 20px;
+}
+
+h2 {
+    color: #a83f63;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.message {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 950px;
+    margin: 35px auto 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(130, 65, 85, .15);
+    transition: transform .3s;
+}
+
+.gallery img:hover {
+    transform: translateY(-7px);
+}
+
+.card {
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 35px 25px;
+    background: rgba(255,255,255,.7);
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(130, 65, 85, .09);
+    line-height: 2;
+    font-size: 18px;
+}
+
+.future {
+    background: #f9e2e9;
+}
+
+.surprise-button {
+    background: #a83f63;
+    color: white;
+    padding: 15px 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#surpriseMessage {
+    display: none;
+    margin: 25px auto 0;
+    max-width: 650px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #a83f63;
+}
+
+footer {
+    padding: 35px 15px;
+    background: #f5d8e1;
+    line-height: 2;
+}
+
+.floating-heart {
+    position: fixed;
+    bottom: -30px;
+    color: #d45b80;
+    pointer-events: none;
+    animation: floatUp 6s linear forwards;
+    z-index: 10;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    section { padding: 55px 17px; }
+    .gallery img { height: 280px; }
+    .card { padding: 27px 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="small-title">A special day for someone special</div>
+
+    <h1>Happy Birthday, Portia ❤️</h1>
+
+    <p>
+        Today is all about celebrating you.
+        May your day be filled with happiness,
+        beautiful memories and endless reasons to smile.
+    </p>
+
+    <div class="heart">♥</div>
+
+    <button class="music-button" id="musicButton">
+        ♫ Play Sweet Piano
+    </button>
+
+    <div class="music-note">
+        A little melody, made just for your special day.
+    </div>
+</header>
+
+<section>
+    <h2>A Little Message For You</h2>
+
+    <div class="message">
+        Portia, you are someone truly special.
+        Even though distance separates us sometimes,
+        I hope you never forget how much you mean to me.
+
+        <br><br>
+
+        I wish you happiness that never fades,
+        peace in your heart, success in everything you do,
+        and beautiful moments that make life worth celebrating.
+
+        <br><br>
+
+        You deserve a birthday as lovely as the happiness
+        you bring into the lives of people around you.
+    </div>
+</section>
+
+<section>
+    <h2>Beautiful Memories 📸</h2>
+
+    <p class="message">
+        A few pictures to make this little birthday surprise
+        even more special.
+    </p>
+
+    <div class="gallery">
+        <img src="portia1.jpg" alt="Portia photo 1">
+        <img src="portia2.jpg" alt="Portia photo 2">
+        <img src="portia3.jpg" alt="Portia photo 3">
+    </div>
+</section>
+
+<section>
+    <h2>A Letter From Kojo 💌</h2>
+
+    <div class="card">
+        Dear Portia,
+
+        <br><br>
+
+        I may not always have the perfect words,
+        but I want you to know that I appreciate you.
+        Having you in my life is something I don't take for granted.
+
+        <br><br>
+
+        I hope this new chapter brings you closer to
+        your dreams and gives you countless reasons to be happy.
+
+        <br><br>
+
+        Keep being the wonderful person you are.
+        Never stop believing in yourself.
+
+        <br><br>
+
+        Happy Birthday, Portia.
+
+        <br><br>
+
+        With love,<br>
+        <strong>Kojo ❤️</strong>
+    </div>
+</section>
+
+<section>
+    <h2>Even Across The Distance 🌍</h2>
+
+    <div class="card">
+        Distance may keep us in different places,
+        but it doesn't stop us from caring,
+        communicating and making beautiful memories.
+
+        <br><br>
+
+        I look forward to the moments when we won't
+        have to count the distance between us.
+        Until then, let's keep making every moment count.
+    </div>
+</section>
+
+<section class="future">
+    <h2>A Beautiful Future ✨</h2>
+
+    <div class="card">
+        I don't know everything the future holds,
+        but I know there are beautiful things worth
+        looking forward to.
+
+        <br><br>
+
+        I hope that, with time, patience and understanding,
+        we get to build something meaningful together.
+
+        <br><br>
+
+        And who knows? Maybe one day,
+        we'll look back at this birthday and smile
+        at how far we've come.
+    </div>
+</section>
+
+<section>
+    <h2>One Last Surprise 🎁</h2>
+
+    <p class="message">
+        There is one more little message waiting for you.
+    </p>
+
+    <button class="surprise-button" onclick="showSurprise()">
+        Open Your Surprise ❤️
+    </button>
+
+    <div id="surpriseMessage">
+        Portia, never forget how special you are.
+        May your smile stay bright, your dreams grow bigger,
+        and your heart always find reasons to be happy.
+
+        <br><br>
+
+        Happy Birthday once again! ❤️
+
+        <br><br>
+
+        — Kojo
+    </div>
+</section>
+
+<footer>
+    Made with love, just for Portia ❤️
+    <br>
+    From Kojo
+</footer>
+
+<script>
+/* ORIGINAL SOFT PIANO-STYLE MELODY
+   Synthesized in the browser; no external song is used. */
+
+let audioContext = null;
+let masterGain = null;
+let musicPlaying = false;
+let melodyTimer = null;
+let noteIndex = 0;
+
+const melody = [
+    [523.25, 659.25, 783.99],
+    [493.88, 587.33, 739.99],
+    [440.00, 523.25, 659.25],
+    [392.00, 493.88, 587.33],
+    [440.00, 523.25, 659.25],
+    [493.88, 587.33, 739.99],
+    [523.25, 659.25, 783.99],
+    [392.00, 493.88, 587.33]
+];
+
+function playPianoNote(frequency, startTime, duration) {
+    const fundamental = audioContext.createOscillator();
+    const overtone = audioContext.createOscillator();
+    const noteGain = audioContext.createGain();
+
+    fundamental.type = "triangle";
+    overtone.type = "sine";
+
+    fundamental.frequency.value = frequency;
+    overtone.frequency.value = frequency * 2;
+
+    const volume = 0.10;
+
+    noteGain.gain.setValueAtTime(0.0001, startTime);
+    noteGain.gain.exponentialRampToValueAtTime(
+        volume, startTime + 0.015
+    );
+    noteGain.gain.exponentialRampToValueAtTime(
+        0.0001, startTime + duration
+    );
+
+    fundamental.connect(noteGain);
+    overtone.connect(noteGain);
+
+    noteGain.connect(masterGain);
+
+    fundamental.start(startTime);
+    overtone.start(startTime);
+
+    fundamental.stop(startTime + duration + 0.05);
+    overtone.stop(startTime + duration + 0.05);
+}
+
+function playMelody() {
+    if (!musicPlaying) return;
+
+    const now = audioContext.currentTime;
+    const chord = melody[noteIndex];
+
+    chord.forEach((frequency, index) => {
+        playPianoNote(
+            frequency,
+            now + index * 0.035,
+            1.7
+        );
+    });
+
+    // A gentle higher note gives the melody a delicate feel.
+    playPianoNote(chord[0] * 2, now + 0.15, 1.1);
+
+    noteIndex = (noteIndex + 1) % melody.length;
+    melodyTimer = setTimeout(playMelody, 1500);
+}
+
+async function toggleMusic() {
+    const button = document.getElementById("musicButton");
+
+    if (!audioContext) {
+        const AudioContextClass =
+            window.AudioContext || window.webkitAudioContext;
+
+        if (!AudioContextClass) {
+            button.textContent = "Audio not supported";
+            return;
+        }
+
+        audioContext = new AudioContextClass();
+        masterGain = audioContext.createGain();
+        masterGain.gain.value = 0;
+        masterGain.connect(audioContext.destination);
+    }
+
+    if (!musicPlaying) {
+        await audioContext.resume();
+
+        musicPlaying = true;
+
+        masterGain.gain.cancelScheduledValues(audioContext.currentTime);
+        masterGain.gain.setTargetAtTime(
+            0.35, audioContext.currentTime, 0.8
+        );
+
+        button.textContent = "Ⅱ Pause Piano";
+        playMelody();
+
+    } else {
+        musicPlaying = false;
+        clearTimeout(melodyTimer);
+
+        masterGain.gain.cancelScheduledValues(audioContext.currentTime);
+        masterGain.gain.setTargetAtTime(
+            0, audioContext.currentTime, 0.3
+        );
+
+        button.textContent = "♫ Play Sweet Piano";
+    }
+}
+
+document.getElementById("musicButton")
+    .addEventListener("click", toggleMusic);
+
+function showSurprise() {
+    const message = document.getElementById("surpriseMessage");
+
+    message.style.display = "block";
+
+    for (let i = 0; i < 18; i++) {
+        setTimeout(createHeart, i * 120);
+    }
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+
+    heart.className = "floating-heart";
+    heart.textContent = "♥";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 6000);
+}
+
+// A few gentle floating hearts appear occasionally.
+setInterval(() => {
+    if (Math.random() > 0.45) createHeart();
+}, 1800);
+</script>
+
+</body>
+</html>
